@@ -8,7 +8,7 @@ export default ({ refreshUser, userObj }) => {
     const [newDisplayName, setNewDisplayName] = useState(userObj.displayName);
     const onLogOutClick = () => {
         authService.signOut();
-        history.puh('/');
+        history.push('/');
     }
 
     // const getMyNweets = async() => {

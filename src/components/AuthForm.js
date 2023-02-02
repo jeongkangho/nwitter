@@ -33,7 +33,7 @@ const AuthForm = () => {
                 await authService.signInwithEmailAndPassword(email, password);
             }
         } catch (error) {
-            // console.log(error);
+            console.log(error);
         }
     };
 

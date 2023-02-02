@@ -32,7 +32,7 @@ const AppRouter = ({refreshUser, isLoggedIn, userObj}) => {
                         {/* <Redirect from='*' to='/' /> */}
                     </div> 
                     </>
-                ): (
+                ) : (
                     <>
                         <Route exact path="/"> 
                             <Auth /> 

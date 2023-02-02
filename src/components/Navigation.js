@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { Profile } from 'routes/Profile';
 
 const Navigation = ({userObj}) => {
    return (
@@ -14,15 +15,15 @@ const Navigation = ({userObj}) => {
                 </Link>
             </li>
             <li>
-            <Link
-                to="/profile"
-                style={{
-                    marginLeft: 10,
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    fontSize: 12,
-                }}
+                <Link
+                    to="/profile"
+                    style={{
+                        marginLeft: 10,
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        fontSize: 12,
+                    }}
                 >
                 <FontAwesomeIcon icon={faUser} color={"#04AAFF"} size="2x" />
                 <span style={{ marginTop: 10 }}>
@@ -32,6 +33,8 @@ const Navigation = ({userObj}) => {
                 </span>
                 </Link>
             </li>
+            <li>Profile</li>
+            <li>Tweet</li>
         </ul>
     </nav>
    ) ;

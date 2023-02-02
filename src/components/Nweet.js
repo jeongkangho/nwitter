@@ -22,6 +22,7 @@ const Nweet = ({ nweetObj, isOwner }) => {
         });
         setEditing(false);
     };
+    
     const onChange = (event) => {
         const {
             target:{ value },
